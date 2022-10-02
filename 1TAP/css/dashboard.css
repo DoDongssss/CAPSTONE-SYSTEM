@@ -1,0 +1,325 @@
+.dashboard-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.card-list{
+    width: 100%;
+    height: 20%;
+}
+.card-list .cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.card-wrapper{
+    margin-bottom: 1.5rem!important;
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.card.blue{
+    box-shadow: 0.3rem 0.3rem 0.6rem #fff, -0.2rem -0.2rem 0.5rem #fff;
+    color: var(--blue);
+    border: 0;
+}
+.card.orange{
+    box-shadow: 0.3rem 0.3rem 0.6rem #FFF, -0.2rem -0.2rem 0.5rem #fff;
+    color: var(--orange);
+    border: 0;
+}
+.card.green{
+    box-shadow: 0.3rem 0.3rem 0.6rem #FFF, -0.2rem -0.2rem 0.5rem #fff;
+    color: var(--green);
+    border: 0;
+}
+.card.red{
+    box-shadow: 0.3rem 0.3rem 0.6rem #FFF, -0.2rem -0.2rem 0.5rem #fff;
+    color: var(--red);
+    border: 0;
+}
+.card{
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    min-width: 0;
+}
+.card .title{
+    display: inline-block;
+    font-size: 8px;
+    padding: 10px 10px 0;
+    text-transform: uppercase;
+}
+
+.card i{
+    font-size: 45px;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+}
+.card .value{
+    font-size: 28px;
+    padding: 0 10px;
+}
+.card .stats{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 8px;
+    margin-top: 20px;
+    padding: 10px 10px 0;
+    text-transform: uppercase;
+}
+.dashboard-content .graphs{
+  height: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.graphs .graph{
+  height: 100%;
+  width: 29%;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.3rem 0.3rem 0.6rem #fff, -0.2rem -0.2rem 0.5rem #fff;
+  border-top: 3px solid #43DC80;
+}
+.graph .title{
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #000;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: .8rem;
+  font-family: 'poppins', sans-serif;
+}
+.graph .graph-container{
+  width: 100%;
+  height: 80%;
+  padding: .5em;
+  display: inline-block;
+  position: relative;
+}
+.graph.two .graph-container{
+}
+.graph.three .graph-container{
+}
+.attendance-table{
+    width: 100%;
+    height: calc(100% - 20% - 35%);
+    display: flex;
+    margin-top: 1em;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FFF;
+}
+.attendance-table span{
+    border-left: 3px solid #c8d0e7;
+    border-radius: 5px;
+    height: 100%;
+    opacity: .3;
+    margin: 0 1em;
+
+}
+.attendance-table .timein-table{
+    width: 50%;
+    max-height: 100%
+}
+.attendance-table .timeout-table{
+    width: 50%;
+    max-height: 100%;
+}
+.search-filter{
+    width: 100%;
+    height: 8%;
+    position: relative;
+    margin-bottom: .4em;
+    display: flex;
+}
+.search-filter input{
+    width: 50%;
+    height: 100%;
+    border: 0;
+    padding: 0.2em 1em 0.2em 3em;
+    border-radius: 4px;
+    background: none;
+    box-shadow: inset 0.05rem 0.05rem 0.4rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #fff;
+    outline: 0;
+}
+.search-filter i{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    font-size: 1.1rem;
+    color: #5078ef;
+}
+.search-filter h1{
+    position: absolute;
+    right: 0;
+    color:#c8d0e7;
+    -webkit-text-stroke: 1px #66B92E;
+    opacity: .5;
+    font-size: 1.3rem;
+}
+.search-filter h1 i{
+    margin-left: -20px;
+    margin-top: 3px;
+    color: #fff;
+    top:0;
+}
+.timeout-table  h1:last-child{
+    -webkit-text-stroke: 1px #D65B4A;
+}
+.attendance-table .table-wrapper{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.content-table {
+    border-collapse: collapse;
+    font-size: 0.7em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+  }
+  .content-table thead tr {
+    background-color: #00cc00;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: .8em;
+  }
+  .timeout-table thead tr{
+    background-color: #ff0000;
+  }
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+    text-align: center;
+    width: auto;
+  }
+  .content-table th:first-child,
+  .content-table td:first-child{
+    width: 5%;
+  } 
+  .content-table th:last-child,
+  .content-table td:last-child{
+    width: 10%;
+  } 
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  thead tr{
+    position: sticky;
+    top: 0;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #e69900;
+  }
+  /* .content-table tbody {
+    width: 100%;
+    display: block;
+    height: 200px;
+    overflow-y: scroll;
+} */
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #e69900;
+  }
+
+  .table-wrapper{
+    max-height: calc(100% - 8%);
+    overflow-y: scroll;
+  }
+
+   /* SCROLL BAR */
+  #scrollbar::-webkit-scrollbar {
+    width: 3.5px;
+  }
+   
+  #scrollbar::-webkit-scrollbar-thumb {
+    background: var(--light-gray1); 
+  }
+
+  @media screen and (max-width: 600px){
+    .content-body{
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    .content-body::-webkit-scrollbar{
+      display: none; 
+    }
+    .card-list {
+      height: 600px;
+    }
+    .card-list .cards{
+  
+    }
+    .cards .card {
+      max-width: 100%;
+    }
+    .cards .card-wrapper{
+      max-width: 100%;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      flex-grow: 0;
+      flex-shrink: 0;
+      transition: flex-wrap .3s ease;
+    }
+    .dashboard-content .graphs{
+      height: 700px;
+      max-width: 100%;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      transition: flex-wrap .3s ease;
+    }
+    .graphs .graph{
+      width: 100%;
+      height: calc(100% / 3);
+      margin-bottom: 5px;
+    }
+    
+    .attendance-table{
+      height: 1500px;
+      max-width: 100%;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      transition: flex-wrap .3s ease;
+    }
+    .attendance-table .timein-table{
+      width: 100%;
+    }
+    .attendance-table span{
+      border: 0;
+      height: 1px;
+      border-top: 3px solid #c8d0e7;
+      border-radius: 5px;
+      width: 100%;
+      opacity: .3;
+      margin: 3em 0em;
+    }
+    .attendance-table .timeout-table{
+      width: 100%;
+    }
+  }

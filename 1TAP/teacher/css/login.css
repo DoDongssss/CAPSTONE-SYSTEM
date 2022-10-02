@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #805500; */
+    padding: 1em;
+    background-image: url(../img/login-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper .container{
+    width: 400px;
+    height: 300px;
+    background-color: #b47700;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #4d3300;
+    border-radius: 6px;
+}
+.container .card-top{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #684400;
+    /* background: rgb(104,68,0);
+    background: linear-gradient(180deg, rgba(104,68,0,1) 0%, rgba(104,68,0,1) 76%, rgba(180,119,0,1) 100%); */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.card-top i{
+    font-size: 3rem;
+    color: #cccccc;
+    /* background: -webkit-linear-gradient(#0000ff, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+.container .card-bottom{
+    width: 100%;
+    height: calc(100% - 25%);
+    padding: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-bottom .bottom-wrapper{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.bottom-wrapper .user-authentication{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.user-authentication span{
+    color: #e6e6e6;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.user-authentication span i{
+    font-size: .6rem;
+    margin-right: 4px;
+    color: #39ac39;
+}
+.bottom-wrapper .credential-wrapper{
+    width: 100%;
+    height: calc(100% - 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.credential-wrapper form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.credential-wrapper .input-group{
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.input-group i{
+    width: calc(100% - 85%);
+    background-color: #cccccc;
+    color: #404040;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-group input{
+    width: 85%;
+    height: 32px;
+    outline: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border: 1px solid #FFF;
+    padding: 1em;
+}
+.input-group input:focus{
+    border-right: 3px solid #00b300;
+    /* border-left: 0; */
+}
+.credential-wrapper button{
+    width: 80%;
+    height: 34px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #684400;
+}
+.credential-wrapper button:hover{
+    background-color: #805500;
+    border-right: 3px solid #00b300;
+}
+.credential-wrapper span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.credential-wrapper span:hover{
+    color: #661400;
+}
+.bottom-wrapper .result-wrapper{
+    display: none;
+    width: 85%;
+    height: 20%;
+    padding: .5em;
+}
+.result-wrapper .result{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+}
+.result span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result i{
+    font-size: .5rem;
+    margin-right: 3px;
+    color: #00cc00;
+}
+@media screen AND (max-width: 600px) {
+    .wrapper .container{
+        width: 290px;
+    }
+}
+@media screen AND (max-width: 400px) {
+    .card-bottom .bottom-wrapper{
+        width: 95%;
+    }
+}

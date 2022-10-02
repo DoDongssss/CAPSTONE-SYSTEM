@@ -1,0 +1,19 @@
+:root{
+    --sidebar-width: 200px;
+    --content-width: calc(100% - var(--sidebar-width));
+    --white: #FFF;
+    --black: #000;
+    --lighest-gray: #f2f2f2;
+    --light-gray1: #c8d0e7;
+    --light-gray2: #595959;
+    --gray: #808080;
+    --dark-gray: #262626;
+    --dark-gray1: #0d0d0d;
+    --blue: #8080ff;
+    --orange: #DA932C;
+    --lightest-orange: #ffebcc;
+    --green: #66B92E;
+    --red: #D65B4A;
+    --dodger-blue: #2298F1;
+    --radius: 10px;
+}

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    box-sizing: border-box;
+  } 
+
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+  	align-items: center;
+  	justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../img/login-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container{
+    display: flex;
+  	margin: 0;
+    padding: 0;
+  	align-items: center;
+  	justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 310px;
+    border: 2px solid #a6a6a6;
+  }
+
+  .top-container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  	align-items: center;
+  	justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    background-color: #1a75ff;
+  }
+  .calendar{
+    font-size: .8rem;
+    padding-bottom: .5rem;
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, #000 , #ff0000);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  .fa-shield-halved {
+    font-size: 5rem;
+    color: #ffffff;
+  }
+
+  .bottom-container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 3.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+
+  .authentication h3{
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  .form-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .form-group input{
+    width: 100%;
+    height: 1.6rem;
+    margin-bottom: .5rem;
+    padding: .5rem .5rem .5rem 2rem;
+    border: 2px solid #999999;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  .form-group input:focus {
+    border: 2px solid #555;
+  }
+
+  .icon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 0;
+    font-size: 1rem;
+    margin: -.5rem 0 0 .5rem;
+    width: 10%;
+  }
+
+  .user,.password:-moz-placeholder { 
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+  }
+  .checkbox{
+    margin-bottom: .2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: rows;
+  }
+  .checkbox input{
+    padding: 0;
+    margin: 0;
+    margin-right: .2rem;
+
+  }
+  .checkbox p{
+    padding: 0;
+    margin: 0;
+    font-size: .7rem;
+  }
+  .login{
+    height: 1.7rem;
+    width: 100%;
+    color: white;
+    background-color: #333333;
+    cursor: pointer;
+  }
+
+  .footer{
+    margin: 1rem;
+    font-size: .8rem;
+  }
+
+  .footer a{
+    color: #000;
+  }
